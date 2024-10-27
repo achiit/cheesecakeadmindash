@@ -1,3 +1,34 @@
+
+// import { Routes, Route, Navigate } from 'react-router-dom';
+// import Sidebar from '../components/Sidebar';
+// import { OrganizationList, OrganizationDetails } from '../components/organizations';
+// import Tags from '../components/Tags';
+// import Users from '../components/Users';
+
+// const Dashboard = () => {
+//   return (
+//     <div className="flex min-h-screen bg-gray-50">
+//       <Sidebar />
+      
+//       <div className="flex-1 ml-64">
+//         <main className="p-6">
+//           <Routes>
+//             <Route path="users" element={<Users />} />
+//             <Route path="organizations" element={<OrganizationList />} />
+//             <Route path="organizations/:id" element={<OrganizationDetails />} />
+//             <Route path="tags" element={<Tags />} />
+//             <Route path="" element={<Navigate to="users" />} />
+//           </Routes>
+//         </main>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Dashboard;
+
+// src/pages/Dashboard.jsx
+// src/pages/Dashboard.jsx
 // src/pages/Dashboard.jsx
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
@@ -13,7 +44,8 @@ const Dashboard = () => {
       <Sidebar />
       
       <div className="flex-1 ml-64">
-        <main>
+          <main className="p-6">
+
           <Routes>
             <Route path="users" element={<Users />} />
             <Route path="organizations" element={<OrganizationList />} />
